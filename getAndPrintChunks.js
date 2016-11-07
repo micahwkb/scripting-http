@@ -2,6 +2,8 @@
 
 const https = require('https')
 
+
+
 function getAndPrintHTMLChunks () {
   const requestOptions = {
     host: 'sytantris.github.io',
@@ -22,8 +24,8 @@ function getAndPrintHTMLChunks () {
   })
 }
 
-getAndPrintHTMLChunks();
+getAndPrintHTMLChunks()
 
-module.exports {
-  getAndPrintHTMLChunks: getAndPrintHTMLChunks
+module.exports = {
+  getAndPrintHTMLChunks: getAndPrintHTMLChunks,
 }
