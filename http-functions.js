@@ -1,5 +1,7 @@
+('use strict')
 const https = require('https')
 
+// gets chunks of text via http, returns string for callback
 module.exports = function getHTML (options, callback) {
   let dataChunks = []
   https.get(options, function(response) {
