@@ -2,14 +2,9 @@
 
 const https = require('https')
 
-const longerStream = {
-  host: "stream-large-file.herokuapp.com",
-  path: "/give-me-stuff-now"
-};
-
 const requestOptions = {
   host: 'sytantris.github.io',
-  path: '/http-examples/step2.html'
+  path: '/http-examples/step3.html'
 }
 
 function getAndPrintHTML (options) {
@@ -30,5 +25,4 @@ function getAndPrintHTML (options) {
   })
 }
 
-// getAndPrintHTML(longerStream)
-// getAndPrintHTML(requestOptions)
+getAndPrintHTML(requestOptions)
